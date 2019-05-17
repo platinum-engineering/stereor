@@ -1,0 +1,28 @@
+{
+  "name": "meteor-react-boilerplate",
+  "author": "Rus Inozemtsev",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.3.4",
+    "bcrypt": "^3.0.6",
+    "meteor-node-stubs": "^0.4.1",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-helmet": "^5.2.1",
+    "react-router-dom": "^5.0.0",
+    "simpl-schema": "^1.5.5"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "stereor/client/index.js",
+      "server": "stereor/server/index.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}
